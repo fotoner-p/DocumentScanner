@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/resultView" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/pos1"
+		android:textAlignment="center" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/pos2"
+		android:textAlignment="center" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/pos3"
+		android:textAlignment="center" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/pos4"
+		android:textAlignment="center" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="horizontal">
+		<TextView
+			android:text="OCR"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:id="@+id/nulltext1"
+			android:layout_marginLeft="10dp" />
+		<Button
+			android:text="Send"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/ocrBtn" />
+	</LinearLayout>
+	<MultiAutoCompleteTextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/ocrText"
+		android:text="" />
+</LinearLayout>
